@@ -1,0 +1,31 @@
+/******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+
+.about{
+  background-position: 150% 70%;
+  &__inner{
+    text-align: center;
+  }
+}
+
+.feature{
+  &__title{
+    text-align: center;
+  }
+}
+.customer{
+  &__title{
+    text-align: center;
+  }
+}
+.faq{
+  &__title{
+    text-align: center;
+  }
+}
+
+
+

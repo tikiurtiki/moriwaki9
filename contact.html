@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="styles/vendors/reset.css" />
+    <!-- adobe fonts -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "pca4ldo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- fontawesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>MORIWAKI Video</title>
+    <!-- formrun -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__bg-color"></div>
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img class="logo" src="images/header-logo.svg" alt="" />
+          </a>
+        </h1>
+        <a class="header__btn" href="index.html"> TOPへ戻る </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <div class="contact-form__inner">
+          <h2 class="contact-form__title">お問い合わせ</h2>
+          <p class="contact-form__text">
+            ご質問やご相談などございましたら<br />
+            お気軽にお問い合わせ下さい。
+          </p>
+          <form
+            class="formrun"
+            action="https://form.run/api/v1/r/5y9x9nhc5cwr92pmcv3o5k7f"
+            method="post"
+          >
+            <div>
+              <label class="formrun__label" for="form-name"
+                >お名前
+                <!-- <span class="formrun__required">必須</span> -->
+              </label>
+
+              <input
+                class="formrun__input"
+                id="form-name"
+                name="_field_2"
+                type="text"
+                data-formrun-required
+              />
+            </div>
+            <div>
+              <label class="formrun__label" for="form-name2"
+                >お名前（フリガナ）</label
+              >
+              <input
+                class="formrun__input"
+                id="form-name2"
+                name="_field_3"
+                type="text"
+                data-formrun-required
+              />
+            </div>
+
+            <div>
+              <label class="formrun__label" for="form-mail"
+                >メールアドレス</label
+              >
+              <input
+                class="formrun__input"
+                id="form-mail"
+                name="_field_1"
+                type="text"
+                data-formrun-type="email"
+                data-formrun-required
+              />
+              <div data-formrun-show-if-error="_field_1">
+                メールアドレスを正しく入力してください
+              </div>
+            </div>
+
+            <div>
+              <label class="formrun__label" for="form-textarea"
+                >お問い合わせ内容</label
+              >
+              <textarea
+                class="formrun__textarea"
+                id="form-textarea"
+                name="_field_4"
+                data-formrun-required
+              ></textarea>
+              <div data-formrun-show-if-error="_field_7">
+                お問い合わせ内容を入力してください
+              </div>
+            </div>
+
+            <!-- ボット投稿をブロックするためのタグ -->
+            <div class="_formrun_gotcha">
+              <style media="screen">
+                ._formrun_gotcha {
+                  position: absolute !important;
+                  height: 1px;
+                  width: 1px;
+                  overflow: hidden;
+                }
+              </style>
+              <label for="_formrun_gotcha"
+                >If you are a human, ignore this field</label
+              >
+              <input
+                type="text"
+                name="_formrun_gotcha"
+                id="_formrun_gotcha"
+                tabindex="-1"
+              />
+            </div>
+
+            <button
+              class="btn formrun__btn"
+              type="submit"
+              data-formrun-error-text="未入力の項目があります"
+              data-formrun-submitting-text="送信中..."
+            >
+              送信
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__logo">
+          <a class="footer__logo__link" href="index.html">
+            <img src="images/header-logo(fff)-03.svg" alt="" />
+          </a>
+        </h2>
+        <ul class="sns-btns">
+          <li class="sns-btn">
+            <a href="https://twitter.com/to_s_ki330" class="sns-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a href="https://www.instagram.com/toshiki_330" class="sns-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a
+              href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+              class="sns-link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+        <small class="copy-right"
+          >&copy;MORIWAKI Video all rights reserved.</small
+        >
+      </div>
+    </footer>
+    <!-- global-menu.js -->
+    <script src="scripts/libs/global-menu.js"></script>
+  </body>
+</html>

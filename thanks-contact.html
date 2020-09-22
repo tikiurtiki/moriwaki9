@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="styles/vendors/reset.css" />
+    <!-- adobe fonts -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "pca4ldo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- fontawesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>MORIWAKI Video</title>
+    <!-- formrun -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  </head>
+  <body>
+    <div class="global-container">
+    <header class="header">
+      <div class="header__bg-color"></div>
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img class="logo" src="images/header-logo.svg" alt="" />
+          </a>
+        </h1>
+        <a class="header__btn" href="index.html"> TOPへ戻る </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="thanks-contact">
+        <div class="thanks-contact__inner">
+          <h2 class="thanks-contact__title">送信完了</h2>
+          <p class="thanks-contact__text">
+            お問い合わせありがとうございました。内容を確認次第、担当者よりあらためてご連絡します。
+          </p>
+          <a class="thanks-contact__btn btn contact-btn" href="index.html">
+            <i class="fas fa-angle-right fa-position-right"></i
+            >トップページへ戻る</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__logo">
+          <a class="footer__logo__link" href="index.html">
+            <img src="images/header-logo(fff)-03.svg" alt="" />
+          </a>
+        </h2>
+        <ul class="sns-btns">
+          <li class="sns-btn">
+            <a href="https://twitter.com/to_s_ki330" class="sns-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a href="https://www.instagram.com/toshiki_330" class="sns-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a
+              href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+              class="sns-link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+        <small class="copy-right"
+          >&copy;MORIWAKI Video all rights contactd.</small
+        >
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

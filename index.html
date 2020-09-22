@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- リセットCSSここから -->
+    <link rel="stylesheet" href="styles/vendors/reset.css" />
+    <!-- adobe fonts -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "pca4ldo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos.css  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- fontawesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- accordion.js -->
+    <script src="scripts/libs/accordion.js"></script>
+    <script src="scripts/libs/reserve-bottom-btn.js"></script>
+
+    <!-- smooth scroll.js-->
+    <script src="scripts/libs/smooth-scroll.js"></script>
+    <title>MORIWAKI Video</title>
+  </head>
+  <body>
+    <div class="global-container">
+      <header class="header">
+        <div class="header__bg-color"></div>
+        <div class="header__inner">
+          <h1 class="header__logo">
+            <a href="#">
+              <img class="logo" src="images/header-logo.svg" alt="" />
+            </a>
+          </h1>
+          <div class="humberger-menu">
+            <div class="humberger-menu__trigger js-humberger-menu__trigger">
+              <div class="humberger-menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="global-nav">
+          <div class="global-nav__container">
+            <ul class="global-nav__lists">
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#about"
+                  >MORIWAKI Videoとは？</a
+                >
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#feature"
+                  >私たちが大切にしていること</a
+                >
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#customer">お客様の声</a>
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#money">料金プラン</a>
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#flow">ご利用の流れ</a>
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#faq">よくあるご質問</a>
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link" href="#message"
+                  >MORIWAKI Videoの想い</a
+                >
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link btn reserve-btn" href="reserve.html">
+                  <i class="fas fa-angle-right fa-position-right"></i
+                  >撮影のご予約はこちら</a
+                >
+              </li>
+              <li class="global-nav__list">
+                <a class="global-nav__link btn contact-btn" href="contact.html">
+                  <i class="fas fa-angle-right fa-position-right"></i
+                  >お問い合わせはこちら</a
+                >
+              </li>
+            </ul>
+            <ul class="sns-btns">
+              <li class="sns-btn">
+                <a
+                  href="https://twitter.com/to_s_ki330"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="sns-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="sns-btn">
+                <a
+                  href="https://www.instagram.com/toshiki_330"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="sns-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="sns-btn">
+                <a
+                  href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="sns-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="main-visual">
+        <div class="main-visual__visual">
+          <img src="images/S__23953523.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__inner">
+          <h2 class="about__title">MORIWAKI Videoとは？</h2>
+          <div class="about__texts">
+            <p class="about__text">
+              MORIWAKI Videoはご両親に感謝の想いを伝えるためのサービスです。
+            </p>
+            <p class="about__text">
+              直接伝えるのは恥ずかしい。 <br />
+              忙しくて会えていない。<br />
+              きっかけがない。
+            </p>
+            <p class="about__text">
+              私たちは、そんな方々へインタビューをし、その様子を撮影することで「想い」を形に残すお手伝いをしております。
+            </p>
+            <!-- <p class="about__text">
+              MORIWAKI Videoであなたの想いを伝えてみませんか？
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <section class="promotion-video">
+        <div class="promotion-video__bg-color"></div>
+        <div class="promotion-video__inner">
+          <h2 class="promotion-video__title">
+            <span>WebCM</span>
+            『今、感謝の想いを両親に伝えるということ』
+          </h2>
+          <div class="video-wrapper">
+            <div id="player" class="video-wrapper__video"></div>
+          </div>
+          <div class="promotion-video__text-wrapper">
+            <p class="promotion-video__text">
+              実家を出てから、両親と一緒に過ごす時間も少なくなった。あと何回会えるのだろう。いつかは訪れるその瞬間。後悔したくない。
+            </p>
+            <p class="promotion-video__text">
+              何か役に立つものをプレゼントするのもいいけれど、今まで言えなかった想いを伝えてみる。そんな親孝行があってもいいのかもしれない。
+            </p>
+            <p class="promotion-video__text">
+              MORIWAKI
+              Videoは新たな親孝行の形を提案する今までにないサービスです。MORIWAKI
+              Videoであなたの想いを伝えてみませんか？
+            </p>
+            <p class="promotion-video__text"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-letter" id="video-letter">
+        <div class="video-letter__inner">
+          <h2 class="video-letter__title">実際のビデオレターを見る
+          </h2>
+          <p class="video-letter__text">
+            実際にご両親にプレゼントされたビデオレターです。ぜひご覧くださいませ。
+          </p>
+          <div class="video-letter__cards">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide customer__card">
+                  <div class="customer-video__video-wrapper">
+                    <iframe
+                      class="customer-video__video"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/TQ8WlA2GXbk"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="swiper-slide customer__card">
+                  <div class="customer-video__video-wrapper">
+                    <iframe
+                      class="customer-video__video"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/ocbwECtjnXc"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="swiper-slide customer__card">
+                  <div class="customer-video__video-wrapper">
+                    <iframe
+                      class="customer-video__video"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/ReCnlwVZj1M"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- スクロールオブザーバーのためのクラス -->
+      <div class="js-reserverbtn-container">
+        <section class="feature" id="feature">
+          <div class="feature__inner">
+            <h2 class="feature__title">私たちが大切にしていること</h2>
+            <div class="feature__cards">
+              <div class="feature__card">
+                <figure class="card__img">
+                  <img
+                    src="images/spot-b56221ba9755b63507a3951eb85c17605e5fd63bda30fd093348a86378d8e4c9.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="card__textarea">
+                  <h3 class="card__title">一緒につくる</h3>
+                  <p class="card__text">
+                    映像クリエイターが編集を担当し、完成した動画は確認していただけます。もちろん再編集もOK。想いが伝わる作品を一緒につくります。
+                  </p>
+                </div>
+              </div>
+              <div class="feature__card">
+                <figure class="card__img">
+                  <img
+                    src="images/spot-b56221ba9755b63507a3951eb85c17605e5fd63bda30fd093348a86378d8e4c9.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="card__textarea">
+                  <h3 class="card__title">撮りたい場所で撮れる</h3>
+                  <p class="card__text">
+                    zoomなどを使ったオンラインでの撮影のため、全国どこでも撮影できます。また、ご希望であればあなたのお好みの場所へ私たちが出張して撮影します。
+                  </p>
+                </div>
+              </div>
+              <div class="feature__card">
+                <figure class="card__img">
+                  <img
+                    src="images/spot-b56221ba9755b63507a3951eb85c17605e5fd63bda30fd093348a86378d8e4c9.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="card__textarea">
+                  <h3 class="card__title">あなたの想いに寄り添う</h3>
+                  <p class="card__text">
+                    インタビューはこのサービスを立ち上げた森脇俊樹さんが担当します。あなたの想いに寄り添い、自然と言葉が溢れ出る。そんなインタビューを心がけております。
+                    <!-- <span class="card__text--btn btn js-card__text--btn"><i class="fas fa-angle-right fa-position-right"></i
+                      >
+                      森脇俊樹ってどんな人？</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="customer" id="customer">
+          <div class="customer__inner">
+            <h2 class="customer__title">お客様の声</h2>
+            <div class="customer__cards">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide customer__card">
+                    <figure class="card__img">
+                      <img src="images/S__23953523.jpg" alt="" />
+                    </figure>
+                    <div class="card__textarea">
+                      <p class="card__text">
+                        両親にプレゼントしたところ、すごく喜んでくれました。普段恥ずかしくて伝えられない想いをこうして伝えることができてよかったです。（正木さん
+                        / 25歳）
+                      </p>
+                      <div class="card__btn-container">
+                        <span class="card__btn js-card__btn">
+                          <i class="fas fa-angle-right fa-position-right"></i>
+                          実際のビデオレターを見る</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide customer__card">
+                    <figure class="card__img">
+                      <img src="images/S__23953523.jpg" alt="" />
+                    </figure>
+                    <div class="card__textarea">
+                      <p class="card__text">
+                        両親にプレゼントしたところ、すごく喜んでくれました。普段恥ずかしくて伝えられない想いをこうして伝えることができてよかったです。（正木さん
+                        / 25歳）
+                      </p>
+                      <div class="card__btn-container">
+                        <span class="card__btn js-card__btn">
+                          <i class="fas fa-angle-right fa-position-right"></i>
+                          実際のビデオレターを見る</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide customer__card">
+                    <figure class="card__img">
+                      <img src="images/S__23953523.jpg" alt="" />
+                    </figure>
+                    <div class="card__textarea">
+                      <p class="card__text">
+                        両親にプレゼントしたところ、すごく喜んでくれました。普段恥ずかしくて伝えられない想いをこうして伝えることができてよかったです。（正木さん
+                        / 25歳）
+                      </p>
+                      <div class="card__btn-container">
+                        <span class="card__btn js-card__btn">
+                          <i class="fas fa-angle-right fa-position-right"></i>
+                          実際のビデオレターを見る</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- お客様の声のビデオ -->
+        <section class="customer-video js-customer-video">
+          <div class="close-btn js-close-btn">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="customer-video__inner">
+            <div class="customer-video__video-container">
+              <h2 class="customer-video__title">正木さん</h2>
+              <div class="customer-video__video-wrapper">
+                <iframe
+                  class="customer-video__video"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/-m1IBXDZIQs"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="customer-video__video-container">
+              <h2 class="customer-video__title">正木さん</h2>
+              <div class="customer-video__video-wrapper">
+                <iframe
+                  class="customer-video__video"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/s2lrXYmpi7w"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="customer-video__video-container">
+              <h2 class="customer-video__title">正木さん</h2>
+              <div class="customer-video__video-wrapper">
+                <iframe
+                  class="customer-video__video"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Gbz2C2gQREI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="money" id="money">
+          <div class="money__inner">
+            <h2 class="money__title">料金プラン</h2>
+            <div class="money__plan">
+              <div class="plan__inner">
+                <h3 class="plan__title">オンライン撮影</h3>
+                <div class="plan__money">
+                  <span class="plan__money--small">7,500円</span>
+                  <p class="plan__money--off">今だけ40%オフ</p>
+                  <span class="plan__money--large"> 4,500円 </span>
+                </div>
+                <div class="plan__text">
+                  zoomを使ったオンラインでの撮影プラン。全国どこでも撮影できます。
+                </div>
+              </div>
+            </div>
+            <div class="money__plan">
+              <div class="plan__inner">
+                <h3 class="plan__title">出張撮影</h3>
+                <div class="plan__money">
+                  <span class="plan__money--small">25,000円</span>
+                  <p class="plan__money--off">今だけ40%オフ</p>
+                  <span class="plan__money--large"> 1,5000円 </span>
+                </div>
+                <div class="plan__text">
+                  私たちが出張して撮影するプラン。ご希望の場所で撮影していただけます。
+                </div>
+              </div>
+            </div>
+            <!-- 注意書き -->
+            <div class="money__precautionary">
+              <p class="money__text">※表示はすべて税抜価格です。</p>
+              <p class="money__text">
+                ※出張撮影の場合、別途交通費を頂戴いたします。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="flow" id="flow">
+          <div class="flow__inner">
+            <h2 class="flow__title">ご利用の流れ</h2>
+          </div>
+        </section>
+        <section class="faq" id="faq">
+          <div class="faq__inner">
+            <h2 class="faq__title">よくあるご質問</h2>
+            <div class="accordion-wrapper">
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q
+                    インタビュアーの森脇俊樹さんについてもっと詳しく知りたいです。
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q しっかりと自分の想いを話せるか不安です。
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q インタビューに向けて準備しておくことはありますか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q
+                    インタビューはどれくらいの質問数ですか？また、どんな質問がありますか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q 自分から話したいことがあった場合、どうすればいいですか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q 編集していただいた動画の再編集は何回までお願いできますか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  動画の再編集は１回までとさせていただきます。しかし、誤字脱字などの不備がございましたら何回でも訂正致しますので、遠慮なさらずお申し付けください。
+                </dd>
+              </dl>
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q 料金の支払い方法について教えてください
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A
+                  お支払いはクレジットカード決済と銀行振込の２種類をご利用いただけます。
+                </dd>
+              </dl>
+              <!-- <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q 出張撮影の場合、交通費はどうなりますか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A　交通費は撮影料金には含まれておりません。そのため、梅田からの交通費を別途ご用意していただくようお願いしております。
+                </dd>
+              </dl> -->
+              <dl class="accordion">
+                <dt class="accordion__title js-accordion__title">
+                  <p class="accordion__title--text">
+                    Q
+                    キャンセル料はかかりますか？また、予約後にキャンセル、もしくは延期したい場合はどうしたらいいですか？
+                  </p>
+                  <span class="accordion__title--btn"> </span>
+                </dt>
+                <dd class="accordion__body js-accordion__body">
+                  A　現在、キャンセル料はいただいておりません。ただ、キャンセル・延期は原則３日前までとお願いしております。お電話していただくかメールにてお申し付けください。
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="message" id="message">
+        <div class="message__inner">
+          <h2 class="message__title">MORIWAKI Videoの想い</h2>
+          <h2 class="message__video-title">
+            『このサービスを立ち上げた背景と僕の想いについて』
+            <span>森脇俊樹より</span>
+          </h2>
+          <div class="message__video-wrapper">
+            <iframe
+              class="message__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-m1IBXDZIQs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="message__texts">
+            <p class="message__text">
+              私たちはこの世から一人でも多くの「MORIWAKI」を消したいと思っています。
+            </p>
+            <p class="message__text">
+              「MORIWAKI」とは何者か。<br />
+              それは、大切な身近な人に身近すぎるがゆえに近況や感謝などを伝えられず、その人が亡くなった後、
+            </p>
+            <p class="message__text">
+              「もっとたくさん会話をすればよかった」<br />
+              と後悔する人のことです。
+            </p>
+            <p class="message__text">
+              今後「MORIWAKI」と同じ後悔をする人が
+              一人でも少なくなれば。後悔となりうることを防ぐことができれば。
+            </p>
+            <p class="message__text">
+              そんな思いから、ご両親を中心に身近な人に感謝の想いを伝えるお手伝いがしたいと考えました。
+            </p>
+            <p class="message__text">
+              そして、MORIWAKI Videoを通じて
+              感謝を伝えてもらった人だけでなく、伝えた人も幸せになれる。
+            </p>
+            <p class="message__text">
+              そんなきっかけになれることを私たちは望んでおります。
+            </p>
+
+            <!-- <span class="message__name">森脇 俊樹</span> -->
+          </div>
+        </div>
+      </section>
+      <!-- 俊樹さんについて -->
+      <section class="about-toshiki">
+        <div class="about-toshiki__inner">
+          <!-- <span class="about-toshiki__sub-title">about Toshiki Moriwaki</span> -->
+
+          <!-- <figure class="about-toshiki__img">
+              <img src="images/俊樹さん.jpg" alt="">
+            </figure> -->
+
+          <!-- <div class="about-toshiki__btn js-about-toshiki__btn btn"> <i class="fas fa-angle-right fa-position-right"></i
+              >森脇 俊樹ってどんな人？</div> -->
+        </div>
+        <div class="about-toshiki__cover">
+          <div class="close-btn js-close-btn2">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="about-toshiki__video-container">
+            <div class="about-toshiki__video-text">
+              森脇俊樹さんがMORIWAKI
+              Videoを立ち上げられた背景や込められた想いについて話しています。ぜひご覧ください。
+            </div>
+            <div class="about-toshiki__video-wrapper">
+              <iframe
+                class="about-toshiki__video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-m1IBXDZIQs"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="about-toshiki__sns">
+              <p class="about-toshiki__sns--title">各種SNSはこちらから</p>
+              <ul class="sns-btns">
+                <li class="sns-btn">
+                  <a
+                    href="https://twitter.com/to_s_ki330"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sns-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="sns-btn">
+                  <a
+                    href="https://www.instagram.com/toshiki_330"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sns-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="sns-btn">
+                  <a
+                    href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+                    class="sns-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reservertion">
+        <div class="reservertion__inner">
+          <h2 class="reservertion__title">撮影のご予約</h2>
+          <span class="reservertion__subtitle text-cursive">reservertion</span>
+          <p class="reservertion__text">
+            40%オフの期限は11月まで!
+            <br />絶賛ご予約受付中!!
+          </p>
+          <div class="reservertion__btn">
+            <a class="btn reserve-btn" href="reserve.html">
+              <i class="fas fa-angle-right fa-position-right"></i
+              >撮影のご予約はこちら</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__inner">
+          <h2 class="contact__title">お問い合わせ</h2>
+          <span class="text-cursive contact__subtitle">contact</span>
+          <p class="contact__text">
+            ご質問やご相談などございましたら<br />
+            お気軽にお問い合わせください。
+          </p>
+          <div class="contact__btn">
+            <a class="btn contact-btn" href="contact.html">
+              <i class="fas fa-angle-right fa-position-right"></i
+              >お問い合わせはこちら</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="reserve-bottom-btn">
+        <div
+          class="reserve-bottom-btn__inner js-reserve-bottom-btn__inner"
+        ></div>
+        <a class="reserve-bottom-btn__btn btn reserve-btn" href="reserve.html">
+          <i class="fas fa-angle-right fa-position-right"></i>
+          40%オフで今すぐ予約する
+        </a>
+      </section>
+      <footer class="footer">
+        <div class="footer__inner">
+          <h2 class="footer__logo">
+            <a class="footer__logo__link" href="#">
+              <img src="images/header-logo(fff)-03.svg" alt="" />
+            </a>
+          </h2>
+          <ul class="sns-btns">
+            <li class="sns-btn">
+              <a
+                href="https://twitter.com/to_s_ki330"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="sns-btn">
+              <a
+                href="https://www.instagram.com/toshiki_330"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="sns-btn">
+              <a
+                href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+          <small class="copy-right"
+            >&copy;MORIWAKI Video all rights reserved.</small
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/libs/youtubePlayerApi.js"></script>
+    <!-- swiper CDN -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper.js -->
+    <script src="scripts/libs/swiper.js"></script>
+    <!-- scroll.js -->
+    <script src="scripts/libs/scroll.js"></script>
+    <!-- global-menu.js -->
+    <script src="scripts/libs/global-menu.js"></script>
+    <!-- customer-video.js -->
+    <script src="scripts/libs/customer-video.js"></script>
+    <!-- about-toshiki.js -->
+    <script src="scripts/libs/about-toshiki.js"></script>
+  </body>
+</html>

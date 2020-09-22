@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="styles/vendors/reset.css" />
+    <!-- adobe fonts -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "pca4ldo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- fontawesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>MORIWAKI Video</title>
+    <!-- formrun -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <script src="scripts/libs/payment.js"></script>
+  </head>
+  <body>
+     <div class="global-container">
+    <header class="header">
+      <div class="header__bg-color"></div>
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img class="logo" src="images/header-logo.svg" alt="" />
+          </a>
+        </h1>
+        <a class="header__btn" href="index.html"> TOPへ戻る </a>
+      </div>
+    </header>
+
+    
+
+    <main>
+      <section class="reserve-form">
+        <div class="reserve-form__inner">
+          <h2 class="reserve-form__title">ご予約</h2>
+          <p class="reserve-form__text">
+            こちらはMORIWAKI Videoの予約専用ページです。お名前や撮影プランなどのご入力後、お支払いのご案内をいたします。
+          </p>
+          <form
+            class="formrun"
+            action="https://form.run/api/v1/r/e2jfxfpz0swltytbn83ybpr9"
+            method="post"
+          >
+            <div>
+              <label class="formrun__label" for="form-name"
+                >お名前（必須）
+                <!-- <span class="formrun__required">必須</span> -->
+              </label>
+
+              <input
+                class="formrun__input"
+                id="form-name"
+                name="_field_2"
+                type="text"
+                data-formrun-required
+              />
+            </div>
+            <div>
+              <label class="formrun__label" for="form-name2"
+                >お名前（フリガナ）（必須）</label
+              >
+              <input
+                class="formrun__input"
+                id="form-name2"
+                name="_field_3"
+                type="text"
+                data-formrun-required
+              />
+            </div>
+
+            <div>
+              <label class="formrun__label" for="form-mail"
+                >メールアドレス（必須）</label
+              >
+              <input
+                class="formrun__input"
+                id="form-mail"
+                name="_field_1"
+                type="text"
+                data-formrun-type="email"
+                data-formrun-required
+              />
+              <div data-formrun-show-if-error="_field_1">
+                メールアドレスを正しく入力してください
+              </div>
+            </div>
+
+            <div>
+              <label class="formrun__label" for="form-tel">電話番号（必須）</label>
+              <input
+                class="formrun__input"
+                id="form-tel"
+                name="_field_4"
+                type="text"
+                data-formrun-type="tel"
+                data-formrun-required
+              />
+              <div data-formrun-show-if-error="_field_4">
+                電話番号を正しく入力してください
+              </div>
+            </div>
+
+            <div class="formrun__money-plan">
+              <p class="formrun__label" for="form-plan">料金プラン（必須）</p>
+              <div class="money-plan__radio-wrapper">
+                <input
+                  class="money-plan__radio"
+                  id="form-plan1"
+                  name="_field_8"
+                  type="radio"
+                  data-formrun-required
+                />
+                <label class="money-plan__radio-label js-online-radiobtn" for="form-plan1"
+                  >オンライン撮影</label
+                >
+                <input
+                  class="money-plan__radio"
+                  id="form-plan2"
+                  name="_field_8"
+                  type="radio"
+                  data-formrun-required
+                />
+                <label for="form-plan2" class="money-plan__radio-label js-offline-radiobtn"
+                  >出張撮影</label
+                >
+              </div>
+              <div data-formrun-show-if-error="_field_8">
+                料金プランをお選びください
+              </div>
+            </div>
+
+            <div class="formrun__pay-way">
+              <label class="formrun__label" for="form-payway">お支払い方法（必須）</label>
+              <div class="pay-way__radio-wrapper">
+                <input
+                  class="pay-way__radio"
+                  id="form-payway1"
+                  name="_field_12"
+                  type="radio"
+                  data-formrun-required
+                />
+                <label class="pay-way__radio-label" for="form-payway1">クレジットカード決済</label>
+                <input
+                  class="pay-way__radio"
+                  id="form-payway2"
+                  name="_field_12"
+                  type="radio"
+                  data-formrun-required
+                />
+                <label class="pay-way__radio-label" for="form-payway2">銀行振込</label>
+              </div>
+
+              <!-- エラーメッセージ -->
+              <div data-formrun-show-if-error="_field_8">
+                お支払い方法をお選びください
+              </div>
+            </div>
+
+
+
+            <div>
+              <label class="formrun__label" for="form-textarea"
+                >事前に相談したいこと（任意）</label
+              >
+              <textarea
+                class="formrun__textarea"
+                id="form-textarea"
+                name="_field_9"
+              ></textarea>
+            </div>
+
+            <!-- ボット投稿をブロックするためのタグ -->
+            <div class="_formrun_gotcha">
+              <style media="screen">
+                ._formrun_gotcha {
+                  position: absolute !important;
+                  height: 1px;
+                  width: 1px;
+                  overflow: hidden;
+                }
+              </style>
+              <label for="_formrun_gotcha"
+                >If you are a human, ignore this field</label
+              >
+              <input
+                type="text"
+                name="_formrun_gotcha"
+                id="_formrun_gotcha"
+                tabindex="-1"
+              />
+            </div>
+
+            <button
+              class="btn formrun__btn"
+              type="submit"
+              data-formrun-error-text="未入力の項目があります"
+              data-formrun-submitting-text="送信中..."
+            >
+              お支払いに進む
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__logo">
+          <a class="footer__logo__link" href="index.html">
+            <img src="images/header-logo(fff)-03.svg" alt="" />
+          </a>
+        </h2>
+        <ul class="sns-btns">
+          <li class="sns-btn">
+            <a href="https://twitter.com/to_s_ki330" class="sns-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a href="https://www.instagram.com/toshiki_330" class="sns-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="sns-btn">
+            <a
+              href="https://www.youtube.com/channel/UCN-Krh3H_HoSTTC8NCfUMbA"
+              class="sns-link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+        <small class="copy-right"
+          >&copy;MORIWAKI Video all rights reserved.</small
+        >
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

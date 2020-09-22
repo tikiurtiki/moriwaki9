@@ -1,0 +1,78 @@
+.btn {
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 7px;
+  width: 80%;
+  font-weight: bold;
+  max-width: 300px;
+  position: relative;
+  
+  
+
+  .fa-position-right {
+    position: absolute;
+    top: calc(50% - 0.4em);
+    right: 1rem;
+  }
+}
+
+.reserve-btn{
+  background-color: $reserve-btn;
+  color: #fff;
+  font-size: 16px;
+  filter: drop-shadow(0px 0px 9px rgba(110,100,125,0.14));
+  border-bottom: 4px solid #9d4023;
+}
+
+.contact-btn {
+  background-color: $btn-gray;
+  color: $GlobalTextColor;
+}
+
+.sns-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-btn {
+  margin: 0 10px;
+}
+
+.sns-link {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: $GlobalTextColor;
+  font-size: 15px;
+  color: #fff;
+
+  & i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// .page-top-btn {
+//   position: relative;
+//   width: 45px;
+//   height: 45px;
+//   border-radius: 50%;
+//   background-color: $GlobalTextColor;
+//   color: #fff;
+//   // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+//   opacity: 0.8;
+//   .fa-arrow-up {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     // line-height: 40px;
+//     font-size: 120%;
+//     transition: all 0.3s;
+//   }
+// }
